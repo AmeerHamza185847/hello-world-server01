@@ -2,7 +2,8 @@ console.log("Hello World first Server");
 
 import express from 'express';
 const app = express();
-const PORT = 3000
+const PORT = 3000;
+// const PORT = process.env.PORT || 3000; to listen either on 3000 or cloud provided port
 
 app.get('/', (req, res) => {
   res.send('Hello World! first server' + new Date());
